@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+     <script>
+    if(localStorage.getItem("theme") === "dark"){
+        document.documentElement.classList.add("dark");
+    }
+</script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class=" text-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <h5 class="logo">HAGAR</h5>
+
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                ☰
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light d-flex flex-column">Home <span class="p-1 bg-light"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Projects.html" class="nav-link text-light">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+                    <button class="btn btn-dark ms-lg-3 mt-2 mt-lg-0" onclick="darkMode()">Dark Mode</button>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- main -->
+<section class="p-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1>Hi, I'm Hager Saber</h1>
+                <h4>Front-End Developer Student</h4>
+
+                <p class="mt-3">
+                    I build simple and creative web projects using HTML, CSS, JavaScript and Bootstrap.
+                </p>
+
+                <button class="btn me-2">
+                    <a href="contact.html" class="text-light text-decoration-none">Contact Me</a>
+                </button>
+
+                <button class="btn ">
+                    <a href="Projects.html" class="text-light text-decoration-none">View My Projects</a>
+                </button>
+            </div>
+
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <img src="./images/me.jpg" class="img-fluid w-50 rounded-5">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- about me  .. short intro -->
+<section class="p-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center">
+                <img src="./images/me3.jpg" class="img-fluid w-50">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <h3>About Me</h3>
+                <p class="font-monospace">
+                    I'm a student at WE School of Applied Technology.
+                </p>
+                <p>I love building websites and learning new technologies.</p>
+
+                <button class="btn ">
+                    <a href="About.html" class="text-light text-decoration-none">Show More</a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- projects -->
+<section class="p-5">
+    <div class="container">
+        <h1 class="text-center">Featured Projects</h1>
+
+        <div class="row mt-5 g-4">
+
+            <div class="coco col-md-6 col-lg-4">
+                <div class="shadow p-3 text-center rounded-3 ">
+                    <img src="./images/strict.png" class="img-fluid mb-3">
+                    <h5>STRICT is a responsive theme with a clean and minimal look</h5>
+                    <button class="btn p-2 "><a href="https://github.com/hagarsaber20077-netizen/STRICT-WEBSITE" class="text-decoration-none text-light">code</a></button>
+                   <button class="btn p-2 "><a href="https://hagarsaber20077-netizen.github.io/STRICT-WEBSITE/" class="text-decoration-none text-light">View</a></button>
+
+                </div>
+            </div>
+
+            <div class="coco col-md-6 col-lg-4">
+                <div class="shadow p-3 text-center rounded-3">
+                    <img src="./images/final project.png " class="img-fluid mb-3">
+                    <h5>Final Project Portfolio About Me</h5>
+                   <button class="btn p-2 "><a href="https://github.com/hagarsaber20077-netizen/Portfolio-Website" class="text-decoration-none text-light d-block">code</a></button>
+                   <button class="btn p-2 "><a href="" class="text-decoration-none text-light">View</a></button>
+
+                </div>
+            </div>
+
+            <div class="coco col-md-6 col-lg-4">
+                <div class="shadow p-3 text-center rounded-3">
+                    <img src="./images/SCRIPT.png" class="img-fluid mb-3">
+                    <h5 class="text-capitalize">Furni.modern interior design studio</h5>
+                     <button class="btn p-2 "><a href="https://github.com/hagarsaber20077-netizen/Furni-Website-" class="text-decoration-none text-light">code</a></button>
+                     <button class="btn p-2 "><a href="https://hagarsaber20077-netizen.github.io/Furni-Website-/" class="text-decoration-none text-light">View</a></button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn ">
+                <a href="Projects.html" class="text-white text-decoration-none">Show More</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class=" text-light text-center p-4 mt-5">
+    <div class="container">
+
+        <div class="mb-3">
+            <a href="About.html" class="text-light me-3">About</a>
+            <a href="Projects.html" class="text-light me-3">Projects</a>
+            <a href="contact.html" class="text-light">Contact</a>
+        </div>
+
+        <p>
+            Final Project @2026
+        </p>
+
+    </div>
+</footer>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
